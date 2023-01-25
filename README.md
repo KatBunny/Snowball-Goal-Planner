@@ -1,11 +1,12 @@
-# Snowball-Goal-Planner
-The front end of a full stack API project.
+#### Snowball-behindTheScenes
+The backend server to my Snowball goal tracker api 
 
 #### Katherine Sinkler
 
 # Snowball Goal Planner
 
 ## Wireframe
+ERD Board.jpg{}
 
 ## User Experience
 
@@ -23,12 +24,24 @@ The front end of a full stack API project.
 * As a user I want to have all my goals save within my account as well as be able to access previous history of my completed goals.
 * As a user, I would like to see a full snow man built in response to my goal accomplishment.
 
-## MVP
+## MVP (CRUD + ERD)
+* I will use express for my recall and response cycle.
+        ``` I would like to require express as a route to accomplish all of my CRUD actions and I will more than likely test them all through POST man:
+            -I want to make GET request to welcome the user to my page an help them to utilize the nav bar. I want a json response to all info saved after sign-in and populate accordingly.
+            - I want to allow update and delete options to the user. 
+            -I want to POST all base options and requirements to get the user to set their goals outlined in the user experience. I would like to create a table through my nav bar to communicate with the database. ```
+
+
+* ERD should be seen in wire frame, but will briefly explain it here. 
+        ``` Their will be a client which will be known as "Goal-Getter" entity; identification information with attributes such as email, username, password will be here. All attributes of the client should be a String value. There will be one client with a zero to many relationship with the second entity which is going to be called "Goal Details" which take in attribute such as goal(String), breakdown steps of the goal {string}, time frame to accomplish the goal (Number), etc (final attributes are still being considered). The "Goal Getter" entity will have a zero or many relationship with the final entity which is the "Snow Man".
+        The "Snow Man" entity will have attributes such as completion rate of goal set (Number), timeframe management (Number), and null for anything not beeded within a goal. ```  
+
 * Fulfill user experience.
 * I want to be able to test out this app for myself after deployment to check out bugs and do my best to correct them befor the presentation. 
 * I want to have a desirable css and html front end that is successfully connected to my app.
 * I want to use my backend and front end wireframe as a clear reference and guide from the beginnin to the end.
 * Make daily commits.
+
 
 ### MVP Version 2
 * I want my phone to have mobile media capabilites with up to a 750px accomodation.
